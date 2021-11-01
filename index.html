@@ -1,15 +1,83 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html><head>
     <title>Home | Clinery1</title>
+    <link rel="stylesheet" href="index.css">
 </head><body>
-    <h1>WIP - this site (so far) has been made on my phone with Tmux and neovim.</h1>
-    <h2>Projects:</h2>
-    <ul>
-        <li>ABF lang: <a href="https://github.com/Clinery1/abf-lang">link</a></li>
-        <li>This site's source: <a href="https://github.com/Clinery1/clinery1.github.io">link</a></li>
-        <li>Youtube: <a href="https://www.youtube.com/channel/UCsFvh6zf9rJMj1bYiUpppJQ">link</a></li>
-        <li>Twitch: <a href="https://twitch.tv/the_clinery1">twitch.tv/the_clinery1</a></li>
-        <li>I'll stick more here later.</li>
+    <h1>Howdy! You made it to my website!</h1>
+    <p>Check out some of the things on the site. It is still a work in progress, but it is better than nothing.</p>
+    <a onclick="showItemList(this,aboutMe)" id="aboutButton" class="clickable"><h2>▸ About Me</h2></a>
+    <div id="aboutMe" class="dropdown">
+        <p>
+            I am a freshman in
+            <a href="https://floridapoly.edu" target="_blank">Florida Polytechnic University</a>
+            pursuing a degree in Computer Science.
+            I have been programming since 2016, but I started with websites.
+            I started learning actual programming languages about a year after that. The first programming language I learned was
+            <a href="https://rust-lang.org" target="_blank">Rust</a>.
+            I am very glad I learned Rust first because it allowed me to learn the theory parts of programming
+            without the headaches that other languages like C impose (looking at you pointers and array-out-of-bounds errors).
+            I eventually learned more languages (see <code>Languages I know</code>) and started programming games.
+        </p>
+    </div>
+    <a onclick="showItemList(this,knownLanguages)" id="languagesButton" class="clickable"><h2>▸ Programming Languages I Know</h2></a>
+    <ul id="knownLanguages" class="dropdown">
+        <li><a href="https://rust-lang.org" target="_blank">Rust</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank">Assembly (Intel syntax; NASM)</a></li>
+        <li><a href="https://www.typescriptlang.org" target="_blank">JavaScript/Typescript (deno/node/web)</a></li>
+        <li><a href="https://www.python.org" target="_blank">Python</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/C++" target="_blank">C++</a></li>
+        <li><a href="https://godotengine.org" target="_blank">GDScript (Godot game engine)</a></li>
+        <li><a href="https://esolangs.org/wiki/Brainfuck" target="_blank">BrainF</a></li>
     </ul>
-    <h3>Lets just have fun and program!<br>Why are you reading this? Go and make something cool!</h3>
+    <a onclick="showItemList(this,musicArtists)" id="musicButton" class="clickable"><h2>▸ Artists I Like (music)</h2></a>
+    <div id="musicArtists" class="dropdown">
+        <p style="text-indent:5%">The top 8 artists that I like, plus some others.</p>
+        <ol>
+            <li>Saint Motel. No doubt the best artist I have heard. 11/10★</li>
+            <li>5 Seconds of Summer. The next best author I have heard. They make some good songs. 10/10★</li>
+            <li>Cody Simpson 10/10★</li>
+            <li>30 Seconds to Mars</li>
+            <li>Gavin Degraw</li>
+            <li>Fall Out Boy</li>
+            <li>Panic! At The Disco</li>
+            <li>AJR</li>
+        </ol>
+        <ul>
+            <li>Zayde Wolf</li>
+            <li>Sam Tinnesz</li>
+            <li>OneRepublic</li>
+            <li>Terminite</li>
+            <li>The Struts</li>
+            <li>Apashe</li>
+            <li>Imagine Dragons</li>
+            <li>ILLENIUM</li>
+            <li>RL Grime</li>
+            <li>RIOT</li>
+            <li>WALK THE MOON</li>
+            <li>Skrillex</li>
+            <li>Ed Sheeran</li>
+            <li>Phillip Phillips</li>
+        </ul>
+        <p style="text-indent:5%">That was a lot</p>
+    </div>
+    <a onclick="showItemList(this,myLinks)" id="linksButton" class="clickable"><h2>▸ Links</h2></a>
+    <ul id="myLinks" class="dropdown">
+        <li><a href="https://github.com/Clinery1">My GitHub</a></li>
+        <li><a href="https://github.com/Clinery1/clinery1.github.io">This site's source</a></li>
+        <li><a href="https://www.youtube.com/channel/UCsFvh6zf9rJMj1bYiUpppJQ">My Youtube not much here)</a></li>
+        <li><a href="https://twitch.tv/the_clinery1">My Twitch (not much here)</a></li>
+    </ul>
+    <a onclick="showItemList(this,projects)" id="projectsButton" class="clickable"><h2>▸ Projects</h2></a>
+    <ul id="projects" class="dropdown">
+        <li><a href="https://clinery.itch.io/space-bubbles">Bubbles game (NEW)</a></li>
+        <li><a href="https://github.com/Clinery1/homebrew_os">My operating system (name TBD)</a></li>
+        <li><a href="https://github.com/Clinery1/fish_prompt">My prompt for Fish</a></li>
+        <li><a href="https://github.com/Clinery1/nasm-lsp">NASM-LSP (old project)</a></li>
+        <li><a href="https://github.com/Clinery1/asmGLFW">asmGLFW: GLFW and openGL in assembly</a></li>
+        <li><a href="https://github.com/Clinery1/alt-brainf">ABF: my spin on an esoteric language</a></li>
+    </ul>
+    <p>Lets just have fun and program!<br>Why are you reading this? Go and make something cool!</p>
+    <p style="font-size:xx-small">Also check out my projects if you haven't already</p>
+    <script src="index.js"></script>
 </body></html>
