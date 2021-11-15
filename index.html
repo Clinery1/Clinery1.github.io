@@ -6,6 +6,28 @@
 </head><body>
     <h1>Howdy! You made it to my website!</h1>
     <p>Check out some of the things on the site. It is still a work in progress, but it is better than nothing.</p>
+    <a onclick="showItemList(this,missionStatement)" id="missionStatementButton" class="clickable"><h2>▸ Personal mission statement</h2></a>
+    <div id="missionStatement" class="dropdown">
+        <ul>
+            <li>
+                Any games I make where I am the sole creator <i>AND/OR</i> where I am <i>LEADING</i> a team of creators will
+                <ul>
+                    <li><i>NOT HAVE</i> micro transactions</li>
+                    <li>
+                        listen to user feedback to the extent that it does not alter the original vision of the game
+                        (NOTE: this includes any bug reports, difficulty changes, and UI/UX changes)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            A bug report is any action that happens in a program that does something that is not expected.
+            Example: the button labeled "Exit" brings you to the settings menu or the save button does nothing.
+            <br>
+            This list is subject to <i>ADDITIONS</i>, but <i>NOT</i> removals.
+            See the git commit logs for verification of this statement.
+        </p>
+    </div>
     <a onclick="showItemList(this,mySocials)" id="socialsButton" class="clickable"><h2>▸ My Social Media Accounts</h2></a>
     <ul id="mySocials" class="dropdown">
         <li><a target="_blank" href="https://clinery.itch.io">My Itch.io page</a></li>
