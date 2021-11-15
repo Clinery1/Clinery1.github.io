@@ -1,3 +1,7 @@
+// Copyright © 2021 Christopher Nguyen clinery8237@gmail.com
+// At the time of writing, the only thing here is the dropdown functionality. This is really a great idea (in my opinion), and won't be changed unless I become aware of a better idea.
+
+
 var projectsVisibility=false;
 var globalList;
 
