@@ -1,7 +1,9 @@
 /*
  * Copyright © 2021 Christopher Nguyen clinery8237@gmail.com
- * All of the colors were chosen because they look right on my [Framework laptop](https://frame.work)
  */
+
+
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
 
 
 body {
@@ -18,12 +20,13 @@ a:visited {
 a:link {
     color:#3333ff;
 }
-.dropdown {
-    transition: all 0.3s ease-in-out;
-    font-size:0;
-    margin:0;
+
+
+/* code box thingy */
+pre code.hljs {
+    border:solid 2px #fff;
+    border-radius:1vh;
 }
-.clickable {
-    color:#8888ff;
-    cursor:pointer;
+code {
+    font-family:'Fira Code',monospace;
 }

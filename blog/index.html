@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+</head><body>
+    <div id="navbarContainer"></div>
+    <div id="content">
+        <h1>Welcome to the blog!</h1>
+        <div id="posts">
+            <h3>The blog index is loading...</h3>
+        </div>
+        <form oninput="itemsPerPageUpdate()">
+            <label for="blogItemsPerPage">Post links per page:</label>
+            <select id="blogItemsPerPage" name="blogItemsPerPage">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="1000">1000</option>
+            </select>
+        </form>
+    </div>
+    <script src="blog_pages.js"></script>
+    <script src="/navbar.js"></script>
+</body></html>

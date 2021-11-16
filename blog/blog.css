@@ -1,6 +1,5 @@
 /*
  * Copyright © 2021 Christopher Nguyen clinery8237@gmail.com
- * All of the colors were chosen because they look right on my [Framework laptop](https://frame.work)
  */
 
 
@@ -9,6 +8,8 @@ body {
     color:#ddd;
     font-family:'Fira Sans',sans-serif;
 }
+
+
 a {
     color:#1111ff;
 }
@@ -17,13 +18,4 @@ a:visited {
 }
 a:link {
     color:#3333ff;
-}
-.dropdown {
-    transition: all 0.3s ease-in-out;
-    font-size:0;
-    margin:0;
-}
-.clickable {
-    color:#8888ff;
-    cursor:pointer;
 }

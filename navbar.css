@@ -1,0 +1,29 @@
+/*
+ * Copyright © 2021 Christopher Nguyen clinery8237@gmail.com
+ */
+#navbar {
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:6vh;
+    padding:0;
+    margin:0;
+    border-bottom:solid 2px #fff;
+}
+#content {
+    padding-top:5vh;
+}
+.navbarItem {
+    top:0;
+    position:relative;
+    border-right:solid 2px #fff;
+    width:fit-content;
+    margin:0;
+    padding-top:0.5vh;
+    padding-bottom:0.5vh;
+    padding-right:0.5vw;
+    padding-left:0.5vw;
+    height:5.1vh;
+    display:inline-block;
+}
