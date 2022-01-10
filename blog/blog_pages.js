@@ -58,7 +58,7 @@ function displayPage() {
         let name=INDEX[i].page_path;
         let title=INDEX[i].title
         let creation_date=INDEX[i].creation_date;
-        data+="<a href=\""+name+"\">"+title+" ("+creation_date+")</a><br>";
+        data+="<a href=\"posts/"+name+"\">"+title+" ("+creation_date+")</a><br>";
     }
     if (index>0) {
         data+="<button onclick=\"prevPage()\">Previous page</button>";
